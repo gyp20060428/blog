@@ -1,12 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import cloudflare from '@astrojs/cloudflare';
 
-// https://astro.build/config
+// 注意：暂时移除 cloudflare 适配器导入
+// import cloudflare from '@astrojs/cloudflare'; 
+
 export default defineConfig({
-  // 核心：明确指定为静态模式，这能解决大部分 SSR 相关的本地报错
-  output: 'static', 
+  // 1. 强制设为静态模式
+  output: 'static',
 
   integrations: [
     starlight({
@@ -15,20 +16,12 @@ export default defineConfig({
         { icon: 'github', label: 'GitHub', href: 'https://github.com/gyp20060428' }
       ],
       sidebar: [
-        {
-          label: 'Guides',
-          items: [{ label: 'Example Guide', slug: 'guides/example' }],
-        },
-        {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
-        },
+        { label: 'Guides', items: [{ label: 'Example Guide', slug: 'guides/example' }] },
+        { label: 'Reference', autogenerate: { directory: 'reference' } },
       ],
     }),
   ],
 
-  // 这里的配置微调
-  adapter: cloudflare({
-    imageService: 'passthrough' 
-  }),
+  // 2. 暂时注释掉 adapter。对于 Pages 静态部署，其实不需要这个适配器也能跑
+  // adapter: cloudflare(), 
 });
