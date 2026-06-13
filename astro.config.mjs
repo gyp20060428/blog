@@ -42,9 +42,9 @@ export default defineConfig({
 				},
 				{
 					label: '教程中心',
+					collapsed: true,
 					items: [
-						{ label: '概览', link: '/tutorials/' },
-						{ autogenerate: { directory: 'tutorials' } },
+						{ label: '编程开发', slug: 'tutorials/dev/example' },
 					],
 				},
 				{
