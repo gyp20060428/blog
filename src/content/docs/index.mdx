@@ -1,33 +1,44 @@
 ---
 title: 仰望星空
-description: 征服者的个人博客
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+description: 征服者的个人博客 — 仰望星空，脚踏实地
+template: splash
+hero:
+  tagline: 欢迎来到征服者的个人博客
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: 资源分享
+      link: /resources/
+      icon: right-arrow
+    - text: 开发日志
+      link: /logs/
+      icon: right-arrow
+      variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-# 首页
----
+> 我仰望星空，它是那样寥廓而深邃；
+> 那无穷的真理，让我苦苦地求索追随。
+> 我仰望星空，它是那样庄严而圣洁；
+> 那凛然的正义，让我充满热爱、感到敬畏。
+> 我仰望星空，它是那样自由而宁静；
+> 那博大的胸怀，让我的心灵栖息依偎。
+> 我仰望星空，它是那样壮丽而光辉；
+> 那永恒的炽热，让我心中燃起希望的烈焰、响起春雷。
+>
+> —— 温家宝，《仰望星空》
 
-<div style="text-align: center;">
-    <h1>仰望星空</h1>
-    <h3>作者：温家宝</h3>
-    <p>我仰望星空，</p>
-    <p>它是那样寥廓而深邃；</p>
-    <p>那无穷的真理，</p>
-    <p>让我苦苦地求索追随。</p>
-    <p>我仰望星空，</p>
-    <p>它是那样庄严而圣洁；</p>
-    <p>那凛然的正义，</p>
-    <p>让我充满热爱、感到敬畏。</p>
-    <p>我仰望星空，</p>
-    <p>它是那样自由而宁静；</p>
-    <p>那博大的胸怀，</p>
-    <p>让我的心灵栖息依偎。</p>
-    <p>我仰望星空，</p>
-    <p>它是那样壮丽而光辉；</p>
-    <p>那永恒的炽热，</p>
-    <p>让我心中燃起希望的烈焰、响起春雷。</p>
-</div>
+## 快速导航
 
----
+<CardGrid stagger>
+  <Card title="资源分享" icon="add-document">
+    大学理工科教材清单与在线课程视频汇总，涵盖数学、物理、电子信息、计算机、电气自动化等专业。
+  </Card>
+  <Card title="开发日志" icon="pencil">
+    记录网站从零到一的搭建过程，以及后续的迭代与维护经历。
+  </Card>
+  <Card title="资源下载" icon="download">
+    学习资料下载中心。
+  </Card>
+</CardGrid>
