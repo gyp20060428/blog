@@ -6,9 +6,10 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
+			title: '仰望星空',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/gyp20060428' }],
+			customCss: ['./src/styles/custom.css'],
+				sidebar: [
 				{
 					label: 'Guides',
 					items: [

@@ -1,0 +1,36 @@
+/* ============================================
+   自定义样式 — 背景图片
+   ============================================ */
+
+/* 全局背景图片 */
+body {
+  background-image: url('/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 让各区域半透明，透出背景图 */
+:root {
+  --sl-color-bg: rgba(255, 255, 255, 0.85);
+  --sl-color-bg-nav: rgba(255, 255, 255, 0.8);
+  --sl-color-bg-sidebar: rgba(245, 246, 248, 0.8);
+  --sl-color-bg-inline-code: rgba(232, 232, 232, 0.9);
+  --sl-color-accent: #3b82f6;
+}
+
+/* 暗色模式 */
+:root[data-theme="dark"] {
+  --sl-color-bg: rgba(26, 26, 46, 0.88);
+  --sl-color-bg-nav: rgba(22, 33, 62, 0.85);
+  --sl-color-bg-sidebar: rgba(15, 52, 96, 0.85);
+  --sl-color-bg-inline-code: rgba(42, 42, 74, 0.9);
+  --sl-color-accent: #60a5fa;
+}
+
+/* 内容卡片增加毛玻璃效果 */
+main .sl-container {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
