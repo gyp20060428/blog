@@ -14,7 +14,7 @@ export default defineConfig({
 				{
 					label: '资源分享',
 					items: [
-						{ label: '概览', slug: 'resources' },
+						{ label: '概览', link: '/resources/' },
 						{
 							label: '教材分享',
 							collapsed: true,
