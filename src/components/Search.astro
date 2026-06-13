@@ -1,5 +1,4 @@
 ---
-import Icon from '@astrojs/starlight/user-components/Icon.astro';
 import project from 'virtual:starlight/project-context';
 
 const pagefindTranslations = {
@@ -22,7 +21,7 @@ if (project.trailingSlash === 'never') dataAttributes['data-strip-trailing-slash
 		aria-label={Astro.locals.t('search.label')}
 		aria-keyshortcuts="Control+K"
 	>
-		<Icon name="magnifier" />
+		<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg>
 		<span class="sl-hidden md:sl-block" aria-hidden="true">{Astro.locals.t('search.label')}</span>
 		<kbd class="sl-hidden md:sl-flex" style="display: none;">
 			<kbd>{Astro.locals.t('search.ctrlKey')}</kbd><kbd>K</kbd>

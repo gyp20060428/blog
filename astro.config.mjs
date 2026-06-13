@@ -10,6 +10,9 @@ export default defineConfig({
 			title: '仰望星空',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/gyp20060428' }],
 			customCss: ['./src/styles/custom.css'],
+			components: {
+				Search: './src/components/Search.astro',
+			},
 			sidebar: [
 				{
 					label: '资源分享',
