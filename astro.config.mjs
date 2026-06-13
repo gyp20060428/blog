@@ -41,6 +41,13 @@ export default defineConfig({
 					],
 				},
 				{
+					label: '教程中心',
+					items: [
+						{ label: '概览', link: '/tutorials/' },
+						{ autogenerate: { directory: 'tutorials' } },
+					],
+				},
+				{
 					label: '更多',
 					items: [
 						{ label: '开发日志', slug: 'logs' },
