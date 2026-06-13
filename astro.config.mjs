@@ -44,7 +44,7 @@ export default defineConfig({
 					label: '教程中心',
 					collapsed: true,
 					items: [
-						{ label: '编程开发', slug: 'tutorials/dev/example' },
+						{ label: '编程开发', link: '/tutorials/dev/example/' },
 					],
 				},
 				{
